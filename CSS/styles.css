@@ -1,0 +1,48 @@
+:root {
+    --border: 2px solid #BA86D0;
+}
+/* Header*/
+header{
+    border-bottom: var(--border);
+    text-align: center;
+    text-transform: uppercase;
+}
+/*Body*/
+body{
+    margin: 0 auto;
+    max-width: 700px;
+}
+/*main*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    margin-top: 2%;
+}
+/*pages-wrap*/
+.pages-wrap{
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    border: var(--border);
+    cursor: pointer;
+}
+/*Page's image after adjusts*/
+.pages-wrap:hover{
+
+}
+/*Images*/
+img{
+    max-width: 100%;
+}
+/*report*/
+.report{
+    grid-row: 2;
+}
+/*footer*/
+footer{
+    border: var(--border);
+    background-color: #BA86D0;
+    padding: 5%;
+}
