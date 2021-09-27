@@ -3,7 +3,7 @@ const Csm = document.querySelector("#CSM");
 const projectExam = document.querySelector("#projectExam");
 //Rainydays
 function rainydaysAccess() {
-    window.open("https://vigilant-noether-ba06fe.netlify.app/", "Rainydays", "width=600,height=400")
+    window.open("https://pkderlam.one/rainydays", "Rainydays", "width=600,height=400")
 }
 rainydays.addEventListener("click", rainydaysAccess);
 //CSM

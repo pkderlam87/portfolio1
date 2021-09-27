@@ -1,5 +1,6 @@
 :root {
     --border: 2px solid #BA86D0;
+    --light_purple: #BA86D0;
 }
 /* Header*/
 header{
@@ -14,10 +15,6 @@ body{
 }
 /*main*/
 main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1%;
     margin-top: 2%;
 }
 /*pages-wrap*/
@@ -35,14 +32,39 @@ main{
 /*Images*/
 img{
     max-width: 100%;
+    border-top: var(--border);
 }
 /*report*/
 .report{
     grid-row: 2;
 }
+h2{
+    text-decoration: none;
+    transition: all ease-in-out 1s;
+}
+h3,
+h2:hover{
+    text-align: center;
+    text-decoration: underline #BA86D0;
+}
+h5{
+    margin: 5% auto 0 auto;
+}
+p{
+    margin: 0;
+}
 /*footer*/
 footer{
+    margin-top: 3%;
     border: var(--border);
     background-color: #BA86D0;
     padding: 5%;
+}
+@media (min-width: 769px) {
+    /*main*/
+    main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1%;
+}
 }
