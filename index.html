@@ -9,6 +9,7 @@
     <title>Priscila's Portfolio</title>
     <link href="CSS/styles.css" rel="stylesheet">
     <link href="CSS/fonts.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,27 +25,127 @@
                 alt="The desktop version of Rainydays page before adjusts">
         </div>
         <div class="report">
-            <h3>First</h3>
-            <h5>What was changed:</h5>
-            <p>the site now is headless</p>
-            <h5>How I changed it</h5>
-            <p>I paste the define headless at the second line in the wp-config.php file</p>
-            <h5>Why I did it that way</h5>
-            <p>I tried to paste the define headless in other places, but it didn't work</p>
+            <h3>First <i class="far fa-caret-square-down"></i></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The site now is headless</p>
+                <h5>How I changed it</h5>
+                <p>I paste the define headless at the second line in the wp-config.php file</p>
+                <h5>Why I did it that way</h5>
+                <p>I tried to paste the define headless in other places, but it didn't work</p>
+                <button class="closeText">Close <i class="far fa-window-close"></i></button>
+            </div>
         </div>
-
-
         <div class="pages-wrap" id="CSM">
             <h2>CSM</h2>
             <img src="/images/CSM - (Semestre Project) - before.jpg"
-                alt="The desktop version of CSM page before adjusts">
+                alt="The desktop version of CSM page before adjusts" class="CSM_image">
+            <div class="overlay">
+                <img src="/images/CSM - (Semestre Project) - after.jpg"
+                    alt="The desktop version of CSM page after adjusts">
+            </div>
         </div>
         <div class="report">
-            <h3>What was changed</h3>
-            <h3>How I changed it</h3>
-            <h3>Why I did it that way</h3>
+            <h3>First <i class="far fa-caret-square-down"></i></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>I adjust the desktop version to stay as tablet version.</p>
+                <h5>How I changed it:</h5>
+                <p>I edit the CSS code to keep the same behavior as tablet version. So I deleted some styles, and I
+                    adjust
+                    anothers.</p>
+                <h5>Why I did it that way:</h5>
+                <p>The suggestion of the feed back said “it might be better to have a two column layout”. So I followed
+                    the
+                    suggestion.</p>
+                <button class="closeText">Close <i class="far fa-window-close"></i></button>
+            </div>
+            <h3>Second <i class="far fa-caret-square-down"></i></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The links in the home page before were h3, but now it is buttons.</p>
+                <h5>How I changed it:</h5>
+                <p>I replaced h3 to buttons and I kept the tablet and mobile style. </p>
+                <h5>Why I did it that way:</h5>
+                <p>The feedback said: “the links on the home page look more like headings than links. In the HTML, they
+                    are
+                    headings as well. Might be best to keep the two separate”. I agreed before I thought this task
+                    couldn’t
+                    have buttons because it didn’t have a JavaScript file. Now, I understand it’s much better to use
+                    buttons
+                    than h3, even though it hasn’t a JavaScript file.</p>
+                <button class="closeText">Close <i class="far fa-window-close"></i></button>
+            </div>
+            <h3>Third <i class="far fa-caret-square-down"></i></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The CSM now has correct way to use Google Fonts, and it is above my stylesheets.</p>
+                <h5>How I changed it:</h5>
+                <p>I deleted the @font-face rules because I’m using Google Fonts, and it isn’t necessary. I created a
+                    specific stylesheet to the fonts and font sizes because, eventually, it’s easy to shift some value.
+                    I
+                    placed the Google Stylesheet above my stylesheet. </p>
+                <h5>Why I did it that way:</h5>
+                <p>I followed all the suggestions in my “technically efficient” feedback. Furthermore, I made the
+                    style.css
+                    file smaller, and the fonts.css more accurate.</p>
+                <button class="closeText">Close <i class="far fa-window-close"></i></button>
+            </div>
+            <h3>Fourth <i class="far fa-caret-square-down"></i></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The CSM site didn’t have consistency in three pages (Explore, Exhibition Spaces and Special Events).
+                    I
+                    make some modifications in the css files to resolve this problem.</p>
+                <h5>How I changed it:</h5>
+                <p>All these pages are full width. I adjust the css’ files to make it more consistent. I deleted some
+                    width,
+                    and I tested many times to check if the modification worked. </p>
+                <h5>Why I did it that way:</h5>
+                <p>I could delete all styles, and sometimes it comes in my mind, however it is important to learn adjust
+                    some legacy code. So I tried to adjust the styles instead to delete all. </p>
+                <button class="closeText">Close <i class="far fa-window-close"></i></button>
+            </div>
+            <h3>Fifth <i class="far fa-caret-square-down"></i></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The footer has three columns in the desktop version.</p>
+                <h5>How I changed it:</h5>
+                <p>I created a new rule in the media query (min-width: 769px) to the footer has three columns. Then I
+                    adjusted the items in the grid. I needed to replace the social medias icons because these icons were
+                    inside the supported section and it didn’t allow to put these items in the second column in the
+                    grid.
+                </p>
+                <h5>Why I did it that way:</h5>
+                <p>The suggestion was: “The footer could be more neatly managed to reduce the height. There’s quite a
+                    big
+                    gap in the middle on desktop allowing for a three column layout.” Therefore, I create three columns
+                    and
+                    managed the items to fill this gap. The goal was to reduce the height, now it has 298px and before
+                    it
+                    was 427px.</p>
+                <button class="closeText">Close <i class="far fa-window-close"></i></button>
+            </div>
+            <h3>Sixth <i class="far fa-caret-square-down"></i></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The social medias icons are opening in other window as configured by JavaScript file.</p>
+                <h5>How I changed it:</h5>
+                <p>I create a JavaScript file to add this behavior to the icons. I used “onclick” function and
+                    “window.open”
+                    to open a new window to share the CSM page in the social medias.</p>
+                <h5>Why I did it that way:</h5>
+                <p>The level 1 of the course assignment suggested to add JavaScript to enhance the website. Thus, I
+                    added
+                    the social medias links because it wasn’t working (these were only icons in the Semester Project). I
+                    would like to shift the checkbox hack by JavaScript functions to make the site more responsive, but
+                    to
+                    do that I need more time to change the name of the classes and adjust the details. For now I will
+                    keep
+                    the checkbox.</p>
+                <button class="closeText">Close <i class="far fa-window-close"></i></button>
+            </div>
         </div>
-
 
         <div class="pages-wrap" id="projectExam">
             <h2>Project Exam</h2>

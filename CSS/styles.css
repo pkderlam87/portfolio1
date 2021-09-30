@@ -2,6 +2,9 @@
     --border: 2px solid #BA86D0;
     --light_purple: #BA86D0;
 }
+html{
+    height: 100vh;
+}
 /* Header*/
 header{
     border-bottom: var(--border);
@@ -12,6 +15,7 @@ header{
 body{
     margin: 0 auto;
     max-width: 700px;
+    height: 100%;
 }
 /*main*/
 main{
@@ -25,18 +29,19 @@ main{
     border: var(--border);
     cursor: pointer;
 }
-/*Page's image after adjusts*/
-.pages-wrap:hover{
-
-}
 /*Images*/
 img{
     max-width: 100%;
     border-top: var(--border);
 }
+.overlay{
+    display: none;
+}
 /*report*/
 .report{
-    grid-row: 2;
+
+    max-width: 300px;
+    margin: 0 auto;
 }
 h2{
     text-decoration: none;
@@ -47,15 +52,30 @@ h2:hover{
     text-align: center;
     text-decoration: underline #BA86D0;
 }
+h3,
+button{
+    cursor: pointer;
+}
 h5{
     margin: 5% auto 0 auto;
 }
 p{
     margin: 0;
 }
+.text_report{
+    display: none;
+}
+button{
+    margin: 3% auto;
+    padding: 2%;
+    background-color: #d2a9e485;
+    border-radius: 6px;
+    position: relative;
+    left: 70%;
+}
 /*footer*/
 footer{
-    margin-top: 3%;
+    margin-top: 5%;
     border: var(--border);
     background-color: #BA86D0;
     padding: 5%;
@@ -63,8 +83,30 @@ footer{
 @media (min-width: 769px) {
     /*main*/
     main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1%;
+    }
+    .report{
+        grid-row: 2;
+    }
+    button:hover{
+        background-color: #ceabdb4b;
+        transform: translateY(1px);
+    }
+/*Page's image after adjusts*/
+#CSM{
+    position: relative;
+}
+.overlay{
+    display: inherit;
+    position: absolute;
+    opacity: 0;
+    transition: .3s ease-in;
+    background-color: #fff;
+    top:38%;
+}
+#CSM:hover .overlay{
+    opacity: 1;
 }
 }
