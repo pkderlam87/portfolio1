@@ -39,9 +39,15 @@ img{
 }
 /*report*/
 .report{
-
-    max-width: 300px;
+    border: var(--border);
+    margin: 0 auto 2% auto;
+}
+.report p{
     margin: 0 auto;
+}
+.report p,
+h5{
+    max-width: 300px;
 }
 h2{
     text-decoration: none;
