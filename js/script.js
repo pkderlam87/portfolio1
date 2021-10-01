@@ -22,19 +22,23 @@ projectExam.addEventListener("click", projectExamAccess);
 const titleReport = document.querySelectorAll("h3");
 const textReport = document.querySelectorAll(".text_report");
 const closeText = document.querySelectorAll(".closeText");
-
+const plus = document.querySelectorAll("i");
 let count = 0;
 for (let i = 0; i < titleReport.length; i++) {
     titleReport[i].addEventListener("click", function textAppear(event) {
         textReport[i].style.display = "block";
         count++
+        console.log(plus[i]);
+        plus[i].style.display = "none";
         if (count % 2 == 0) {
             textReport[i].style.display = "none";
+            plus[i].style.display = "initial";
         }
     });
     if (typeof closeText[i] !== `undefined`) {
         closeText[i].addEventListener("click", function closeTextReport(event) {
             textReport[i].style.display = "none";
+            plus[i].style.display = "initial";
         });
     }
 }

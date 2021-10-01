@@ -28,10 +28,12 @@ main{
     align-items: center;
     border: var(--border);
     cursor: pointer;
+    background-color: #d2a9e485;
 }
 /*Images*/
 img{
     max-width: 100%;
+    max-height: 80%;
     border-top: var(--border);
 }
 .overlay{
@@ -49,14 +51,16 @@ img{
 h5{
     max-width: 300px;
 }
-h2{
-    text-decoration: none;
-    transition: all ease-in-out 1s;
+h3{
+    text-decoration: underline var(--light_purple);    
 }
 h3,
-h2:hover{
+h2{
     text-align: center;
-    text-decoration: underline #BA86D0;
+}
+h2:hover{
+    transform: translateY(1px);
+    text-decoration: underline var(--light_purple);
 }
 h3,
 button{
@@ -83,8 +87,8 @@ button{
 footer{
     margin-top: 5%;
     border: var(--border);
-    background-color: #BA86D0;
-    padding: 5%;
+    background-color: var(--light_purple);
+    padding: 3%;
 }
 @media (min-width: 769px) {
     /*main*/
@@ -95,6 +99,7 @@ footer{
     }
     .report{
         grid-row: 2;
+        margin: -3% 0;
     }
     button:hover{
         background-color: #ceabdb4b;
@@ -110,9 +115,17 @@ footer{
     opacity: 0;
     transition: .3s ease-in;
     background-color: #fff;
-    top:38%;
+    top:29%;
 }
 #CSM:hover .overlay{
     opacity: 1;
+}
+}
+@media (min-width: 1000px) {
+body{
+    max-width: 950px;
+}
+.overlay{
+    top: 23%;
 }
 }

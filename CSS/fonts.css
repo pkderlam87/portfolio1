@@ -2,3 +2,11 @@ header,
 main{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif , sans-serif;
 }
+@media (min-width: 769px) {
+h2:hover{
+    font-size: 1.6em;
+}
+h3:hover{
+    font-size: 1.2em;
+}
+}
