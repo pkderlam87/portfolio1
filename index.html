@@ -23,16 +23,130 @@
             <h2>Rainydays</h2>
             <img src="/images/Rainydays (cross-course project) - before.jpg"
                 alt="The desktop version of Rainydays page before adjusts">
+            <div class="overlay">
+                <img src="/images/Rainydays (cross-course project) - after.jpg"
+                    alt="The desktop version of Rainydays page after adjusts">
+            </div>
         </div>
         <div class="report">
-            <h3>Headless <i class="far fa-plus-square"></i></h3>
+            <h3>Headless <span class="more_less"><i class="far fa-plus-square"></i></span>
+            </h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
                 <p>The site now is headless</p>
-                <h5>How I changed it</h5>
+                <h5>How I changed it:</h5>
                 <p>I paste the define headless at the second line in the wp-config.php file</p>
-                <h5>Why I did it that way</h5>
-                <p>I tried to paste the define headless in other places, but it didn't work</p>
+                <h5>Why I did it that way:</h5>
+                <p>I tried to paste the define headless in other places, but it didn't work.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Product image modal <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>Now, the product image is clickable, and when the user clicks on the image, a modal appears with a
+                    bigger image.</p>
+                <h5>How I changed it:</h5>
+                <p>I used the same code applied in the project exam. So when the page content is being created, a
+                    variable selects all the product images and makes them clickable via a loop.</p>
+                <h5>Why I did it that way:</h5>
+                <p>Since the second or third version I would like to make this feature work, but I didn't know how to do
+                    it. I believe it is an important feature to expand the image when the user is buying clothes. So I
+                    think like a user and their experiences with an internet clothes shopping site.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Cart feature <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The cart feature didn’t work, it had an error message because I didn’t create the API call. But now,
+                    it is working perfectly and in another file, called “cart.js”, as suggested by MJ Phillip.</p>
+                <h5>How I changed it:</h5>
+                <p>In the beginning, I tried to export the API call, but the browser didn’t accept, and an error message
+                    appeared: “MIME error”. So, I make another API call to the cart.js, and I make some adjustments to
+                    manage the response. </p>
+                <h5>Why I did it that way:</h5>
+                <p>The website is working based on API calls. I had no other choice if I wanted to do this job as it
+                    should be.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Breaking up js files <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>Some features have their js file. The checkout.js had to break up into 3 files: buyerForm,
+                    checkoutSuccess, and payment. The stock js was deleted because now the data comes from API.</p>
+                <h5>How I changed it:</h5>
+                <p>I delete some files. However, I created other files, and I copied and pasted some functions to other
+                    files.</p>
+                <h5>Why I did it that way:</h5>
+                <p>The checkout.js had 247 lines, and this file had functions from the purchase, form validation,
+                    payment validation by card, and by VIPPS. It was a bit confusing to manage because as much as there
+                    are identifiers it is very long and difficult to shift something when it is necessary.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Search and shopping cart <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The width is compatible with the width’s screens. This div was causing a horizontal scroll bar
+                    before. I added, also, a search feature on some pages to search products in the API.</p>
+                <h5>How I changed it:</h5>
+                <p>I replaced some styles to adjust to width’s screens. As well, I used a search function to fetch the
+                    products from the API.</p>
+                <h5>Why I did it that way:</h5>
+                <p>I didn’t have time enough before to adjust the CSS files. It was a mess because I deleted some HTML
+                    files and I couldn’t adjust these problems, like a horizontal scroll bar. Then, now I have to make
+                    this, it was necessary. To create the search feature, I used the same code learned in the program,
+                    but to show the results of the search, I create another function to the index.html. I did it because
+                    the getProducts function has an if statement that sorter the results.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Footer <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The image of the brand in the footer was replaced with an h1. The social media icons, now, are js
+                    functions to the corresponding social media. It has anchor tags to the products, about, and contact.
+                    The footer now is responsive.</p>
+                <h5>How I changed it:</h5>
+                <p>I replaced some styles in the CSS file to adjust the responsive design to the footer. For the social
+                    media icons, I create a socialMedia.js file to add two functions and open in another window the
+                    corresponding social media.</p>
+                <h5>Why I did it that way:</h5>
+                <p>The footer wasn’t clean, and simple. It had much information with colors, image, icons, and anchors.
+                    I believe it was the initial desire to apply everything I was learning in a single element. I change
+                    it to responsive and made it clean and soft. About social media, I prefer to open another window
+                    because the user is still on the Rainydays page. If I create an anchor to these icons the user goes
+                    out the Rainydays and I don’t know if he or she comes back. Then, I think it is important for the
+                    user to see the page one more time if only to close the window.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Responsive design <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>Each page has small changes to improve the responsive design. The checkout page is an example, it
+                    wasn’t responsive.</p>
+                <h5>How I changed it:</h5>
+                <p>I replaced some styles, created some new media queries, and I adjust the size of the elements. I
+                    tested tireless times, and I modified what it already had.</p>
+                <h5>Why I did it that way:</h5>
+                <p>It is essential to the front-end developer, to think about screens and how the site will see to the
+                    user. During this year, I could learn how to do that more easily, but when I work with this
+                    cross-course project I want to delete all CSS files, and I want to start from scratch. However, in
+                    the real-life I have to know: sometimes I have only one week to adjust something, and this is my
+                    wish it is impossible. Then, this page is like a patchwork.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Loader <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>I create a loader because the API call has a delay, then the user needs to know that something is
+                    happening.</p>
+                <h5>How I changed it:</h5>
+                <p>I create in the functions which it has an API call one div to have a class loader. Then, I copy my
+                    JavaScript CA the style, and animation, so I paste in the rainydays’ style.css. I adjusted the
+                    colors of the loader to have consistency. In the specific product page, I created a div with a class
+                    loader in the HTML file.</p>
+                <h5>Why I did it that way:</h5>
+                <p>I could create the loader inside the js files, but in the specific product page, the function doesn’t
+                    have the same proposal as index or products. As a peculiar page, I added a div class loader in the
+                    HTML file to wait for the results of the API call.</p>
                 <button class="closeText">Close</button>
             </div>
         </div>
@@ -46,7 +160,7 @@
             </div>
         </div>
         <div class="report">
-            <h3>Columns layout <i class="far fa-plus-square"></i></h3>
+            <h3>Columns layout <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
                 <p>I adjust the desktop version to stay as tablet version.</p>
@@ -60,7 +174,7 @@
                     suggestion.</p>
                 <button class="closeText">Close</button>
             </div>
-            <h3>Links on the home page <i class="far fa-plus-square"></i></h3>
+            <h3>Links on the home page <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
                 <p>The links in the home page before were h3, but now it is buttons.</p>
@@ -76,7 +190,7 @@
                     than h3, even though it hasn’t a JavaScript file.</p>
                 <button class="closeText">Close</button>
             </div>
-            <h3>Fonts <i class="far fa-plus-square"></i></h3>
+            <h3>Fonts <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
                 <p>The CSM now has correct way to use Google Fonts, and it is above my stylesheets.</p>
@@ -106,7 +220,7 @@
                     some legacy code. So I tried to adjust the styles instead to delete all. </p>
                 <button class="closeText">Close</button>
             </div>
-            <h3>Footer <i class="far fa-plus-square"></i></h3>
+            <h3>Footer <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
                 <p>The footer has three columns in the desktop version.</p>
@@ -126,7 +240,7 @@
                     was 427px.</p>
                 <button class="closeText">Close</button>
             </div>
-            <h3>Social medias with JavaScript <i class="far fa-plus-square"></i></h3>
+            <h3>Social medias with JavaScript <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
                 <p>The social medias icons are opening in other window as configured by JavaScript file.</p>

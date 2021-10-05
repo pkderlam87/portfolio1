@@ -106,7 +106,8 @@ footer{
         transform: translateY(1px);
     }
 /*Page's image after adjusts*/
-#CSM{
+#CSM,
+#rainydays{
     position: relative;
 }
 .overlay{
@@ -117,7 +118,8 @@ footer{
     background-color: #fff;
     top:29%;
 }
-#CSM:hover .overlay{
+#CSM:hover .overlay,
+#rainydays:hover .overlay{
     opacity: 1;
 }
 }
