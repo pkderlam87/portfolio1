@@ -13,7 +13,7 @@ function csmAccess() {
 Csm.addEventListener("click", csmAccess);
 
 function projectExamAccess() {
-    window.open("https://pkderlam.one/ProjectExam", "ProjectExam", "width=600,height=400")
+    window.open("https://optimistic-rosalind-cf5b38.netlify.app", "ProjectExam", "width=600,height=400")
 }
 projectExam.addEventListener("click", projectExamAccess);
 

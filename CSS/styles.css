@@ -107,7 +107,8 @@ footer{
     }
 /*Page's image after adjusts*/
 #CSM,
-#rainydays{
+#rainydays,
+#projectExam{
     position: relative;
 }
 .overlay{
@@ -119,7 +120,8 @@ footer{
     top:29%;
 }
 #CSM:hover .overlay,
-#rainydays:hover .overlay{
+#rainydays:hover .overlay,
+#projectExam:hover .overlay{
     opacity: 1;
 }
 }

@@ -267,11 +267,84 @@
         <div class="pages-wrap" id="projectExam">
             <h2>Project Exam</h2>
             <img src="/images/Project Exam - before.jpg" alt="The desktop version of Project Exam before adjusts">
+            <div class="overlay">
+                <img src="/images/Project Exam - after.jpg" alt="The desktop version of PriTrips page after adjusts">
+            </div>
         </div>
         <div class="report">
-            <h3>What was changed</h3>
-            <h3>How I changed it</h3>
-            <h3>Why I did it that way</h3>
+            <h3>Welcome image <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>I change the image in the welcome section.</p>
+                <h5>How I changed it:</h5>
+                <p>I shift this image in the HTML file.</p>
+                <h5>Why I did it that way: </h5>
+                <p>I did it because the ratio of the images with my face or a specific element didn't keep on the
+                    desktop screen. In other words, there was a lot of deformation.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Var keyword <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>In the js files were “var” keyword to some variables. I shift them to “let” or “const”.</p>
+                <h5>How I changed it:</h5>
+                <p>I used the search in the Visual Studio Code to find and modify. I analysed one by one result.</p>
+                <h5>Why I did it that way: </h5>
+                <p>I would like a global variables to some functions, but I can use “let” and “const” for that. When I
+                    made the first version, I forgot that.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Search feature in the index.html <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>It is a new feature to search some post in the index page.</p>
+                <h5>How I changed it:</h5>
+                <p>I used the same function in the listOfPosts.js, but in this case I needed to create a specific place
+                    to show the results of the search.</p>
+                <h5>Why I did it that way: </h5>
+                <p>The index had only a slider show place. If I used the same function to show the search results, it
+                    would be return the data before the timeline carousel. Which would likely confuse the user with the
+                    search result and the posts on the timeline.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Menu by year category <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>I added a menu by year in the desktop version as any other blog. </p>
+                <h5>How I changed it:</h5>
+                <p>I used the categories example presented in the CSM course. The years are fixed, but the titles of the
+                    posts are dynamical. To do that I have two loops, one to go through the list of years and the other
+                    to go through the API and write the post titles in HTML. </p>
+                <h5>Why I did it that way: </h5>
+                <p>I would like to implement dynamic years. However, fist I implemented the dynamical titles. I did it
+                    because it was in my project and I had tried it before. Maybe there is a easier way to do that, but
+                    for now I couldn’t think in another solution.</p>
+                <button class="closeText">Close</button>
+            </div>
+            <h3>Post the data from the contact form to WordPress <span class="more_less"><i
+                        class="far fa-plus-square"></i></span></h3>
+            <div class="text_report">
+                <h5>What was changed:</h5>
+                <p>The form is send to the API. I can access the data inside the “inbound messages” in the flamingo. The
+                    user receive the same error messages before, but the success message comes from the API response. I
+                    added an image to this message too. </p>
+                <h5>How I changed it:</h5>
+                <p>I received help from Professor MJ Phillip and my colleagues to provide me with good sources of
+                    research. So I used the Mészáros Róbert article to implement this feature. To handle the file image
+                    I used this article:
+                    https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#supplying_request_options.
+                    Then, I used the facilities of the Contact Form 7 plugin to adjust the minimum length to the fields.
+                    As well the messages come from the response. I get the “error_id” to show the correspondent error
+                    message. This time, I’m using switch instead the if statements because I would like to save space in
+                    the function. </p>
+                <h5>Why I did it that way: </h5>
+                <p>The post method is new for me, I’m learning what I can do or not. I made some adjustments to the
+                    Mészáros Róbert function, but the essence come from the his article. I tried to access the data from
+                    the form, but it was possible only with the flamingo plugin, and this information my colleague
+                    (James Farmer) helped me. My merit was to use the Contact Form 7 to handle the success and error
+                    messages. I would like to learn more about this matter.</p>
+                <button class="closeText">Close</button>
+            </div>
         </div>
 
     </main>
