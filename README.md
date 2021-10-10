@@ -1,5 +1,5 @@
 # PORTFOLIO 
-<p>CID, Chris. Wrapping long words with CSS or HTML. .cjcid.com. May 31, 2019. Retrieved October 2021, from cjcid.com: https://www.cjcid.com/articles/wrapping-long-words-css-html/#word-break</p>
+<p>CID, Chris. Wrapping long words with CSS or HTML. cjcid.com. May 31, 2019. Retrieved October 2021, from cjcid.com: https://www.cjcid.com/articles/wrapping-long-words-css-html/#word-break</p>
 <p>developer.mozilla.org (2021). Retrieved October 2021, from: https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data</p>
 <p>developer.mozilla.org (2021). Retrieved October 2021, from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/</p>
 <p>developer.mozilla.org (2021). Retrieved October 2021, from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#supplying_request_options</p>

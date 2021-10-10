@@ -92,6 +92,14 @@ footer{
     background-color: var(--light_purple);
     padding: 3%;
 }
+.referencesLink{
+    text-decoration: underline solid #000;
+    color: #000;
+}
+/*main references*/
+.mainReferences p{
+    margin-bottom: 2%;
+}
 @media (min-width: 769px) {
     /*main*/
     main{
@@ -99,6 +107,9 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1%;
         max-width: none;
+    }
+    .mainReferences{
+        display: block;
     }
     .report{
         grid-row: 2;
