@@ -33,11 +33,11 @@
             </h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The site now is headless</p>
+                <p>The site is now headless.</p>
                 <h5>How I changed it:</h5>
-                <p>I paste the define headless at the second line in the wp-config.php file</p>
+                <p>I placed the define headless command at the second line in the wp-config.php file</p>
                 <h5>Why I did it that way:</h5>
-                <p>I tried to paste the define headless in other places, but it didn't work.</p>
+                <p>I tried to place the define headless command in other places, but it didn't work.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Product image modal <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
@@ -46,94 +46,98 @@
                 <p>Now, the product image is clickable, and when the user clicks on the image, a modal appears with a
                     bigger image.</p>
                 <h5>How I changed it:</h5>
-                <p>I used the same code applied in the project exam. So when the page content is being created, a
-                    variable selects all the product images and makes them clickable via a loop.</p>
+                <p>I used the same code applied in the project exam: when the page content is being created, a
+                    function populates an array with all the product images and loop over them making each one
+                    clickable.</p>
                 <h5>Why I did it that way:</h5>
-                <p>Since the second or third version I would like to make this feature work, but I didn't know how to do
-                    it. I believe it is an important feature to expand the image when the user is buying clothes. So I
-                    think like a user and their experiences with an internet clothes shopping site.</p>
+                <p>Since the second or third version I wished I had this feature working, but I didn't know how to
+                    implement it. I believe it is an important feature to expand the image when the user is buying
+                    clothes. So I considered the user's perspective and its experience while in on-line shopping sites.
+                </p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Cart feature <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The cart feature didn’t work, it had an error message because I didn’t create the API call. But now,
-                    it is working perfectly and in another file, called “cart.js”, as suggested by MJ Phillip.</p>
+                <p>The cart feature didn’t work at first: it had an error message due to the absence of the API call.
+                    But now, it is working perfectly. It's placed in another file, called “cart.js”, as suggested by MJ
+                    Phillip.</p>
                 <h5>How I changed it:</h5>
-                <p>In the beginning, I tried to export the API call, but the browser didn’t accept, and an error message
-                    appeared: “MIME error”. So, I make another API call to the cart.js, and I make some adjustments to
-                    manage the response. </p>
+                <p>In the beginning, I tried to export the API call, but the browser didn’t accept it: and an error
+                    message would show up saying “MIME error”. So, I made another API call through the cart.js, and I
+                    made some adjustments in order to handle the response. </p>
                 <h5>Why I did it that way:</h5>
-                <p>The website is working based on API calls. I had no other choice if I wanted to do this job as it
-                    should be.</p>
+                <p>The website is working based on API calls. I had no other choice if I wanted to have this job done as
+                    it was expected to be.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Breaking up js files <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>Some features have their js file. The checkout.js had to break up into 3 files: buyerForm,
-                    checkoutSuccess, and payment. The stock js was deleted because now the data comes from API.</p>
+                <p>Some features were assigned their own js file. The checkout.js had to break up into 3 files:
+                    buyerForm, checkoutSuccess, and payment. The stock js was deleted because now the data comes from
+                    API.</p>
                 <h5>How I changed it:</h5>
-                <p>I delete some files. However, I created other files, and I copied and pasted some functions to other
-                    files.</p>
+                <p>I've deleted some files as well as I've created new files to which I copied and pasted some
+                    functions.</p>
                 <h5>Why I did it that way:</h5>
-                <p>The checkout.js had 247 lines, and this file had functions from the purchase, form validation,
-                    payment validation by card, and by VIPPS. It was a bit confusing to manage because as much as there
-                    are identifiers it is very long and difficult to shift something when it is necessary.</p>
+                <p>The checkout.js had 247 lines encompassing functions for purchase, form validation,
+                    payment validation (credit card, VIPPS, etc). It was a bit confusing to handle due to its large
+                    number of lines, it was difficult to find something whenever necessary.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Search and shopping cart <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The width is compatible with the width’s screens. This div was causing a horizontal scroll bar
-                    before. I added, also, a search feature on some pages to search products in the API.</p>
+                <p>The width compatibility with the width’s screens. A particular div was causing a horizontal scroll
+                    bar
+                    to show up. I also added to some pages an API-based product searching feature.</p>
                 <h5>How I changed it:</h5>
-                <p>I replaced some styles to adjust to width’s screens. As well, I used a search function to fetch the
+                <p>I replaced some styles to adjust to screens' width. As well, I used a search function to fetch the
                     products from the API.</p>
                 <h5>Why I did it that way:</h5>
-                <p>I didn’t have time enough before to adjust the CSS files. It was a mess because I deleted some HTML
-                    files and I couldn’t adjust these problems, like a horizontal scroll bar. Then, now I had to do
-                    this, it was necessary. To create the search feature, I used the same code learned in the program,
-                    but to show the results of the search, I create another function to the index.html. I did it because
-                    the getProducts function has an if statement that sorter the results. The search are working on the
-                    index.html and products.html. To the next time, I would like to implement this feature in whole
-                    site.
+                <p>I was aware about the horizontal scroll bar issue, but I never had time enough to adjust the CSS
+                    files. It was a mess. I even deleted some HTML files but I still couldn’t have these problems fixed.
+                    In order to create the searching feature, I used the same code learned during the classes,
+                    but to show the search results, I've create another function into the index.html file. I did it
+                    because the getProducts function has an if statement that sorts the results. The search is working
+                    on both the index.html and the products.html. As a work for the near future, I would like to
+                    extend this feature to the whole site.
                 </p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Footer <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The image of the brand in the footer was replaced with an h1. The social media icons, now, are js
-                    functions to the corresponding social media. It has anchor tags to the products, about, and contact.
-                    The footer now is responsive.</p>
+                <p>The brand image in the footer was replaced by an h1, the social media icons, now, are support by
+                    javascript functions and anchor tags were added to the following sections: products, about, and
+                    contact.Finally, the footer is now responsive.</p>
                 <h5>How I changed it:</h5>
-                <p>I replaced some styles in the CSS file to adjust the responsive design to the footer. For the social
-                    media icons, I create a socialMedia.js file to add two functions and open in another window the
-                    corresponding social media.</p>
+                <p>I replaced some styles in the CSS file in order to adjust the responsive design to the footer. For
+                    the social media icons, I've create a socialMedia.js file in order to hold two functions and
+                    allowing for opening the corresponding social media in a new window.</p>
                 <h5>Why I did it that way:</h5>
-                <p>The footer wasn’t clean, and simple. It had much information with colors, image, icons, and anchors.
-                    I believe it was the initial desire to apply everything I was learning in a single element. I change
-                    it to responsive and made it clean and soft. About social media, I prefer to open another window
-                    because the user is still on the Rainydays page. If I create an anchor to these icons the user goes
-                    out the Rainydays and I don’t know if he or she comes back. Then, I think it is important for the
-                    user to see the page one more time if only to close the window.</p>
+                <p>The footer wasn’t clean and simple. Instead, it was overloaded with information, colors, image,
+                    icons, and anchors. I believe my initial lack of professional maturity made me a victim of the blind
+                    desire of applying, at once, everything I was learning. I changed it in order to make it
+                    responsive,clean and soft. About social media, my choice was to open it in another window so the the
+                    user will be kept on the shopping site, then we won't depend on the user decision to comes back.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Responsive design <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>Each page has small changes to improve the responsive design. The checkout page is an example, it
-                    wasn’t responsive.</p>
+                <p>Each page presents some small changes aiming at improving the responsive design. The checkout page is
+                    the best example: it wasn’t responsive at all.</p>
                 <h5>How I changed it:</h5>
-                <p>I replaced some styles, created some new media queries, and I adjust the size of the elements. I
-                    tested tireless times, and I modified what it already had.</p>
+                <p>I replaced some styles, I created some new media queries, and I adjust the size of the elements. I
+                    tested it relentlessly, endless times and performed the fine grain modifications.</p>
                 <h5>Why I did it that way:</h5>
-                <p>It is essential to the front-end developer, to think about screens and how the site will see to the
-                    user. During this year, I could learn how to do that more easily, but when I work with this
-                    cross-course project I want to delete all CSS files, and I want to start from scratch. However, in
-                    the real-life I have to know: sometimes I have only one week to adjust something, and this is my
-                    wish it is impossible. Then, this page is like a patchwork.</p>
+                <p>It is essential to the front-end developer to think about the user experience and site look-and-feel.
+                    During this year, I learned how to do that more easily. When I work on these cross-course projects,
+                    I always want to delete all the CSS files and start from scratch. However, for the real-life
+                    scenarios, I have to keep in mind that my time will be very limited, so I went for the patchwork
+                    approach.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Loader <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
@@ -142,14 +146,16 @@
                 <p>I create a loader because the API call has a delay, then the user needs to know that something is
                     happening.</p>
                 <h5>How I changed it:</h5>
-                <p>I create in the functions which it has an API call one div to have a class loader. Then, I copy my
-                    JavaScript CA the style, and animation, so I paste in the rainydays’ style.css. I adjusted the
-                    colors of the loader to have consistency. In the specific product page, I created a div with a class
-                    loader in the HTML file.</p>
+                <p>I create the functions that encapsulate the API call and defined a div element to hold the loader
+                    class. Then, I moved the JavaScript style and animation, to the rainydays’ style.css. I've adjusted
+                    the
+                    loader colors towards having more consistency. In the specific product page, I've created in the
+                    html file a div element and assigned to it the loader class.</p>
                 <h5>Why I did it that way:</h5>
-                <p>I could create the loader inside the js files, but in the specific product page, the function doesn’t
-                    have the same proposal as index or products. As a peculiar page, I added a div class loader in the
-                    HTML file to wait for the results of the API call.</p>
+                <p>I considered creating the loader class inside the .js files, but in the specific product page, the
+                    function doesn’t have the same proposal as in the index or in the products pages. As a peculiar
+                    page, I added a specific div class loader to the HTML file in order to wait for the API call
+                    results.</p>
                 <button class="closeText">Close</button>
             </div>
         </div>
@@ -166,100 +172,89 @@
             <h3>Columns layout <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>I adjust the desktop version to stay as tablet version.</p>
+                <p>I made the tablet version straight out of the desktop version.</p>
                 <h5>How I changed it:</h5>
-                <p>I edit the CSS code to keep the same behavior as tablet version. So I deleted some styles, and I
-                    adjust
-                    anothers.</p>
+                <p>I edited the CSS code to enforce the behavior expected in the tablet version. Some styles were
+                    deleted
+                    while others were only slightly adjusted.</p>
                 <h5>Why I did it that way:</h5>
-                <p>The suggestion of the feed back said “it might be better to have a two column layout”. So I followed
-                    the
-                    suggestion.</p>
+                <p>The feedback suggestion stated that “it might be better to have a two column layout” and it was done
+                    as such.</p>
                 <button class="closeText">Close</button>
             </div>
-            <h3>Links on the home page <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
+            <h3>Home page links<span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The links in the home page before were h3, but now it is buttons.</p>
+                <p>The links in the home page, originally under h3 style, were turned into buttons.</p>
                 <h5>How I changed it:</h5>
-                <p>I replaced h3 to buttons and I kept the tablet and mobile style. </p>
+                <p>I replaced the h3 approach by buttons while keeping both the tablet and the mobile styles unchanged.
+                </p>
                 <h5>Why I did it that way:</h5>
-                <p>The feedback said: “the links on the home page look more like headings than links. In the HTML, they
-                    are
-                    headings as well. Might be best to keep the two separate”. I agreed before I thought this task
-                    couldn’t
-                    have buttons because it didn’t have a JavaScript file. Now, I understand it’s much better to use
-                    buttons
-                    than h3, even though it hasn’t a JavaScript file.</p>
+                <p>The feedback stated that “the links on the home page look more like headings than links. In the HTML,
+                    they are headings as well. Might be best to keep the two separate” - to which I agree. At first, I
+                    thought i should not use buttons because it didn’t have a JavaScript file associated. Now, I
+                    understood it’s much better to use buttons than h3, even not having a JavaScript file.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Fonts <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The CSM now has correct way to use Google Fonts, and it is above my stylesheets.</p>
+                <p>The CSM now follows the correct way of using Google Fonts, and it has precedence over my stylesheets.
+                </p>
                 <h5>How I changed it:</h5>
-                <p>I deleted the @font-face rules because I’m using Google Fonts, and it isn’t necessary. I created a
-                    specific stylesheet to the fonts and font sizes because, eventually, it’s easy to shift some value.
-                    I
-                    placed the Google Stylesheet above my stylesheet. </p>
+                <p>I deleted the @font-face rules because I’m using Google Fonts, and it isn’t necessary. I've created a
+                    specific stylesheet to the fonts and font sizes because, eventually, it’s easier to change some
+                    values. I placed the Google Stylesheet before my own stylesheet. </p>
                 <h5>Why I did it that way:</h5>
                 <p>I followed all the suggestions in my “technically efficient” feedback. Furthermore, I made the
-                    style.css
-                    file smaller, and the fonts.css more accurate.</p>
+                    style.css file smaller, and the fonts.css more accurate.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Consistency <i class="far fa-plus-square"></i></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
                 <p>The CSM site didn’t have consistency in three pages (Explore, Exhibition Spaces and Special Events).
-                    I
-                    make some modifications in the css files to resolve this problem.</p>
+                    I made some modifications in the css files to resolve this problem.</p>
                 <h5>How I changed it:</h5>
-                <p>All these pages are full width. I adjust the css’ files to make it more consistent. I deleted some
-                    width,
-                    and I tested many times to check if the modification worked. </p>
+                <p>All these pages are full width. I adjusted the css’ files in order to make it more consistent. I
+                    deleted some width definitions, and I tested it many times in order to confirm that the modification
+                    worked. </p>
                 <h5>Why I did it that way:</h5>
-                <p>I could delete all styles, and sometimes it comes in my mind, however it is important to learn adjust
-                    some legacy code. So I tried to adjust the styles instead to delete all. </p>
+                <p>I could delete all the styles. It comes to my mind that it is important to learn how to maintain some
+                    legacy code, so I tried to adjust the styles instead of deleting them. </p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Footer <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The footer has three columns in the desktop version.</p>
+                <p>The footer was adjusted to have three columns in the desktop version.</p>
                 <h5>How I changed it:</h5>
-                <p>I created a new rule in the media query (min-width: 769px) to the footer has three columns. Then I
-                    adjusted the items in the grid. I needed to replace the social medias icons because these icons were
-                    inside the supported section and it didn’t allow to put these items in the second column in the
-                    grid.
+                <p>I created a new rule in the media query (min-width: 769px) in order to force the footer having three
+                    columns then I adjusted the items in the grid. I needed to replace the social medias icons because
+                    these icons were inside the supported section and it didn’t allow to put these items in the second
+                    column in the grid.
                 </p>
                 <h5>Why I did it that way:</h5>
                 <p>The suggestion was: “The footer could be more neatly managed to reduce the height. There’s quite a
-                    big
-                    gap in the middle on desktop allowing for a three column layout.” Therefore, I create three columns
-                    and
-                    managed the items to fill this gap. The goal was to reduce the height, now it has 298px and before
-                    it
-                    was 427px.</p>
+                    big gap in the middle of the desktop version allowing for a three column layout.” Therefore, I
+                    create three columns and managed the items so they could fill in this gap. The goal was to reduce
+                    the height, now it has 298px in contrast to its previous 427px.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Social medias in JavaScript <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The social medias icons are opening in other window as configured by JavaScript file.</p>
+                <p>The social medias icons are opening into another window as configured by JavaScript file.</p>
                 <h5>How I changed it:</h5>
-                <p>I create a JavaScript file to add this behavior to the icons. I used “onclick” function and
-                    “window.open”
-                    to open a new window to share the CSM page in the social medias.</p>
+                <p>I create a JavaScript file to handle this behavior for the icons. I used the “onclick” function and
+                    the “window.open” to open a new window whose purpose is to share the CSM page on the social media.
+                </p>
                 <h5>Why I did it that way:</h5>
                 <p>The level 1 of the course assignment suggested to add JavaScript to enhance the website. Thus, I
-                    added
-                    the social medias links because it wasn’t working (these were only icons in the Semester Project). I
-                    would like to shift the checkbox hack by JavaScript functions to make the site more responsive, but
-                    to
-                    do that I need more time to change the name of the classes and adjust the details. For now I will
-                    keep
-                    the checkbox.</p>
+                    added the social medias links because it wasn’t working (these were only icons in the Semester
+                    Project). I would like to replace the checkbox hacking by JavaScript functions in order to make the
+                    site more responsive, but, in order to achieve that, I need more time to to adjust some details. For
+                    now, I will just keep the checkbox behavior as it is.</p>
                 <button class="closeText">Close</button>
             </div>
         </div>
@@ -277,72 +272,74 @@
                 <h5>What was changed:</h5>
                 <p>I change the image in the welcome section.</p>
                 <h5>How I changed it:</h5>
-                <p>I shift this image in the HTML file.</p>
+                <p>I replaced the image in the HTML file.</p>
                 <h5>Why I did it that way: </h5>
-                <p>I did it because the ratio of the images with my face or a specific element didn't keep on the
-                    desktop screen. In other words, there was a lot of deformation.</p>
+                <p>I did it because the ratio of the images with specific elements was not preserved on the
+                    desktop screen: The image ended up being stretched .</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Var keyword <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>In the js files were “var” keyword to some variables. I shift them to “let” or “const”.</p>
+                <p>In the corresponding .js files the “var” keyword was used for some variable declarations. I replaced
+                    them by “let” or “const”.</p>
                 <h5>How I changed it:</h5>
-                <p>I used the search in the Visual Studio Code to find and modify. I analysed one by one result.</p>
+                <p>I used the search in the Visual Studio Code in order to locate them. I analysed one by one the
+                    results.</p>
                 <h5>Why I did it that way: </h5>
-                <p>I would like a global variables to some functions, but I can use “let” and “const” for that. When I
-                    made the first version, I forgot that.</p>
+                <p>I would like to use global variables for some functions, but I can use “let” and “const” for that.
+                    For the first version, I completely missed that.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Search feature in the index.html <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>It is a new feature to search some post in the index page.</p>
+                <p>A new feature was added in order to allow for searching post in the index page.</p>
                 <h5>How I changed it:</h5>
-                <p>I used the same function in the listOfPosts.js, but in this case I needed to create a specific place
-                    to show the results of the search.</p>
+                <p>I used the same function available in the listOfPosts.js, but in this case I needed to create a
+                    specific place to show the search results.</p>
                 <h5>Why I did it that way: </h5>
-                <p>The index had only a slider show place. If I used the same function to show the search results, it
-                    would be return the data before the timeline carousel. Which would likely confuse the user with the
-                    search result and the posts on the timeline.</p>
+                <p>The index page presents a slider show area. If I used the same place and function for both things, it
+                    would be returning the data before the timeline carousel was available, it could create a misleading
+                    scenario to the user regarding the search results and the postings on the timeline.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Menu by year category <span class="more_less"><i class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>I added a menu by year in the desktop version as any other blog. </p>
+                <p>I added a menu grouping information by year in the desktop version as any other blog. </p>
                 <h5>How I changed it:</h5>
-                <p>I used the categories example presented in the CSM course. The years are fixed, but the titles of the
-                    posts are dynamical. To do that I have two loops, one to go through the list of years and the other
-                    to go through the API and write the post titles in HTML. </p>
+                <p>I used the categories example presented in the CSM course. The years in the section are static, but
+                    the titles of the posts are dynamic. To achieve that, I implemented two loops: one to go through the
+                    list of years and the other to go through the API and write the post titles in HTML. </p>
                 <h5>Why I did it that way: </h5>
-                <p>I would like to implement dynamic years. However, fist I implemented the dynamical titles. I did it
-                    because it was in my project and I had tried it before. Maybe there is a easier way to do that, but
-                    for now I couldn’t think in another solution.</p>
+                <p>I would like to implement it by loading dynamic years also, however, fist I implemented the dynamical
+                    titles, since this feature was in my project already and I had tried it before. Maybe there is a
+                    easier way to do that, but for now I couldn’t think of another solution.</p>
                 <button class="closeText">Close</button>
             </div>
             <h3>Post the data from the contact form to WordPress <span class="more_less"><i
                         class="far fa-plus-square"></i></span></h3>
             <div class="text_report">
                 <h5>What was changed:</h5>
-                <p>The form is send to the API. I can access the data inside the “inbound messages” in the flamingo. The
-                    user receive the same error messages before, but the success message comes from the API response. I
-                    added an image to this message too. </p>
+                <p>The form is sent to the WordPress backend. I can access the data inside the “inbound messages” in the
+                    flamingo framework. The user receives the same error messages as before, but the success message
+                    comes as an API response. I added an image to this message too. </p>
                 <h5>How I changed it:</h5>
-                <p>I received help from Professor MJ Phillip and my colleagues to provide me with good sources of
+                <p>I got some help from Professor MJ Phillip and from my colleagues who provided me with good sources of
                     research. So I used the Mészáros Róbert article to implement this feature. To handle the file image
-                    I used this article:
+                    I used the following article:
                     https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#supplying_request_options.
                     Then, I used the facilities of the Contact Form 7 plugin to adjust the minimum length to the fields.
-                    As well the messages come from the response. I get the “error_id” to show the correspondent error
-                    message. This time, I’m using switch instead the if statements because I would like to save space in
-                    the function. </p>
+                    As well, the messages come from as an API response. The API provides with an “error_id” to show the
+                    corresponding error message. This time, I’m using switch statements instead the if statements. </p>
                 <h5>Why I did it that way: </h5>
-                <p>The post method is new for me, I’m learning what I can do or not. I made some adjustments to the
-                    Mészáros Róbert function, but the essence come from the his article. I tried to access the data from
-                    the form, but it was possible only with the flamingo plugin, and this information my colleague
-                    (James Farmer) helped me. My merit was to use the Contact Form 7 to handle the success and error
-                    messages. I would like to learn more about this matter.</p>
+                <p>The post method is new for me, meaning that I’m still learning what I can do or not. I made some
+                    adjustments to the Mészáros Róbert function, but the essence come from the his article. I tried to
+                    access the data from the form, but it was possible only with the flamingo plugin, ins this regard,
+                    my colleague (James Farmer) helped me. My merit was all about using the Contact Form 7 to handle the
+                    success and error messages. I would like to learn more about this matter. Nevertheless, I could make
+                    my functions more readable and more maintainable</p>
                 <button class="closeText">Close</button>
             </div>
         </div>
