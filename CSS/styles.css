@@ -19,7 +19,8 @@ body{
 }
 /*main*/
 main{
-    margin-top: 2%;
+    margin: 2% auto;
+    max-width: 350px;
 }
 /*pages-wrap*/
 .pages-wrap{
@@ -96,6 +97,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1%;
+        max-width: none;
     }
     .report{
         grid-row: 2;
