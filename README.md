@@ -5,7 +5,8 @@
 <p>developer.mozilla.org (2021). Retrieved September 2021, from: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Errors/Unexpected_type</p>
 <p>MIYOSHI, Takayuki. Contact Form 7. 5.4.2 version. Retrieved October 2021, from: https://contactform7.com/</p>
 <p>MIYOSHI, Takayuki. Flamingo. 2.2.2 version. Retrieved October 2021, from: https://wordpress.org/plugins/flamingo/</p>
-<p>RABEY, Mark. CSS transition for text decoration; markrabey.com; May. 17, 2015; Retrieved September 2021, from markrabey: https://markrabey.com/2015/05/17/css-transition-for-text-decoration/</p>
+<p>RABEY, Mark. CSS transition for text decoration. markrabey.com. May 17, 2015. Retrieved September 2021, from markrabey.com: https://markrabey.com/2015/05/17/css-transition-for-text-decoration/</p>
 <p>w3resource.com (2021). Retrieved October 2021, from: https://www.w3resource.com/javascript-exercises/javascript-math-exercise-17.php</p>
 <p>w3schools.com (2021). Retrieved September 2021, from: https://www.w3schools.com/css/css3_variables.asp</p>
 <p>w3schools.com (2021). Retrieved September 2021, from: https://www.w3schools.com/howto/howto_css_image_overlay.asp</p>
+<p>CID, Chris. Wrapping long words with CSS or HTML. .cjcid.com. May 31, 2019. Retrieved October 2021, from cjcid.com: https://www.cjcid.com/articles/wrapping-long-words-css-html/#word-break</p>
